@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public abstract class Player {// 玩家类
+public abstract class Player {//鐜╁
 	private String playerName;
 	private int winCounts = 0;
 
-	public abstract String inputName();// 输入玩家姓名
+	public abstract String inputName();//杈撳叆鐜╁濮撳悕
 
-	public abstract int myFist();// 玩家猜拳
+	public abstract int myFist();//鐜╁鍑烘嫵
 
 	public String getPlayerName() {
 		return playerName;
