@@ -5,12 +5,19 @@ public class Computer extends Player {//电脑玩家
 Scanner input=new Scanner(System.in);
 	String inputName() {//玩家为电脑选择角色
 		int choose=input.nextInt();
-		if(choose==1)
+		switch(choose){
+		case 1:
 			setPlayerName("刘备");
-			else if(choose==2)
-				setPlayerName("孙权");
-				else
-					setPlayerName("曹操");
+			break;
+		case 2:
+			setPlayerName("孙权");
+			break;
+		case 3:
+			setPlayerName("曹操");
+			break;
+			default:
+				break;
+		}
 		return getPlayerName();
 		
 	}
